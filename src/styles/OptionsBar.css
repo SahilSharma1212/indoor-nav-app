@@ -1,0 +1,33 @@
+.info-container {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #60d76c;
+    padding: 5px;
+    height: 12.5%;
+    border-radius: 0.7rem;
+    padding-left: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.17);
+}
+
+.info-label {
+    margin-right: 0.5rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+.option-main-container {
+    height: 80vh;
+    width: 15vw;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 7;
+    box-sizing: content-box;
+    
+  }
+
