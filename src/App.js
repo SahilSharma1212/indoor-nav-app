@@ -8,6 +8,8 @@ import Allmaps from './components/Allmaps';
 import MenuButton from './components/elements/MenuButton';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { GlobalContext } from './GlobalContext';
+import './styles/App.css'
+
 
 function App() {
   const { isSidebarVisible } = useContext(GlobalContext);
@@ -19,6 +21,7 @@ function App() {
         {isSidebarVisible && <Sidebar />}
         
         {/* MenuButton will access toggle and position from context */}
+        <div className={`main-content ${isSidebarVisible ? 'shifted' : ''}`}>
         <MenuButton />
 
         <Routes>
@@ -28,6 +31,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );

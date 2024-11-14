@@ -4,12 +4,11 @@
     font-size: 1rem;
     font-weight: bold;
     background-color: white;
-    border: 1px solid #60d76c;
     padding: 5px;
     height: 12.5%;
     border-radius: 0.7rem;
     padding-left: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.13);
 }
 
 .info-label {

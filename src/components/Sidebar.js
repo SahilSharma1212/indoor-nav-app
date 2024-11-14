@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   
   return (
-    <div className='main-container'>
+    <div className='main-container visible'>
 
       <div style={{
          fontFamily: 'cursive', 

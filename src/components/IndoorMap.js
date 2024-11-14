@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import maplibre from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import MarketImage from '../Market.png'; // Import the image directly
+import MarketImage from '../images/Market.png'; // Import the image directly
 import OptionsBar from './OptionsBar';
 
 const IndoorMap = () => {
