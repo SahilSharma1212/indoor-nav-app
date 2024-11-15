@@ -17,7 +17,8 @@ const MenuButton = () => {
         top: '7%',
         left: menuButtonLeft, // Use left value from context
         zIndex: '8',
-        boxShadow: '0px 0px 15px #00000015'
+        boxShadow: '0px 0px 15px #00000015',
+        color:'white',
       }}
       onClick={toggleSidebar}
     >

@@ -1,36 +1,40 @@
 /* App.css */
+*{
+  padding: 0;
+  margin: 0;
+}
+/* Parent container styles */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-around;
+}
 
+/* Sidebar container */
+.sidebar-container {
+  width: 20vw; /* Fixed width for the sidebar */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Main content area for the map and options */
 .main-content {
-    transition: margin-left 0.5s ease; /* Smooth shift transition */
-    margin-left: 0; /* Default position without sidebar */
-  }
-  
-  .main-content.shifted {
-    margin-left: 15vw; /* Shift the content to the right when the sidebar is visible */
-  }
-  
-  /* Additional optional styling for layout */
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .sidebar {
-    width: 15vw;
-    transition: transform 0.5s ease; /* Transition for showing/hiding the sidebar */
-    transform: translateX(-100%); /* Initially hidden */
-  }
-  
-  .sidebar.visible {
-    transform: translateX(0); /* Slide in when visible */
-  }
-  
+  width: 80vw;
+}
+
+/* Map and options container styling */
+.map-n-info {
+  width: 100%; /* Ensure full width inside main content */
+  height: 100%; /* Full height within main content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}

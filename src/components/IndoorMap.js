@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import maplibre from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -11,9 +12,10 @@ const IndoorMap = () => {
   useEffect(() => {
     const initMap = new maplibre.Map({
       container: mapContainerRef.current,
-      style: 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json',
+      style: 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json', // Dark theme style URL
       center: [81.33809683483972, 21.168272666136193],  
       zoom: 19,
+      pitch: 60, // Tilt the map for a 3D perspective
     });
 
     initMap.on('load', () => {
@@ -107,14 +109,19 @@ const IndoorMap = () => {
   
 
   return (
+    <div style={{display:'flex',paddingLeft:'10px', width: '100%', height: '100vh',justifyContent:'space-evenly',alignItems:'center'}}>
 <div
       ref={mapContainerRef}
-      style={{ width: '100%', height: '100vh', position: 'absolute', top: '0', left: '0', display:'flex' , justifyContent:'right',gap:'50px' ,alignItems:'center'}}
+      style={{ width: '70%', height: '90%',borderRadius:'20px',
+        boxShadow:' 0px 0px 20px rgba(47, 105, 222, 0.3)'}}
     >
-      <OptionsBar/>
+      
+</div>
+<div style={{width:'25%'}}>
+<OptionsBar/>
+</div>
 </div>
   );
 };
 
 export default IndoorMap;
-

@@ -15,7 +15,7 @@ const Sidebar = () => {
         }}
       >
         
-        <div style={{fontSize:'1.6rem', fontWeight:'lighter'}}>IndoorNavApp</div>
+        <div style={{fontSize:'1.6rem', fontWeight:'lighter',color:'white'}}>IndoorNavApp</div>
 
         
       </div>

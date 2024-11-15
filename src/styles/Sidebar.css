@@ -1,60 +1,57 @@
+
 .dropdown {
-    max-height: 0; /* Initial state */
-    overflow: hidden; /* Hide the overflowing content */
-    transition: max-height 0.5s ease; /* Smooth transition for max-height */
-    padding-left: 30px;
-  }
-  
-  .dropdown.open {
-    max-height: 200px; /* Set a maximum height for the open state */
-  }
+  max-height: 0; /* Initial state */
+  overflow: hidden; /* Hide the overflowing content */
+  transition: max-height 0.5s ease; /* Smooth transition for max-height */
+  padding-left: 30px;
+}
 
-  .button-container{
-    margin-top: 20px;
-    padding: 10px;
-  }
+.dropdown.open {
+  max-height: 200px; /* Set a maximum height for the open state */
+}
 
-  .button-container:hover{
-    background-color: rgba(0,0,0,0.1);
+.button-container{
+  margin-top: 20px;
+  padding: 10px;
+}
 
-  }
+.button-container:hover{
+  background-color: rgba(255, 255, 255, 0.1);
 
-  .sidebar-options{
-    background: none;
-            border: none; 
-            color: black;
-            cursor: pointer; 
-            padding:0; 
-            font-size: 1rem; 
-            text-align: left;
-            font-weight: bolder;
-            font-size: 20px;
-            width: 100%;
-  }
+}
 
-  .main-container {
-    height: 80vh;
-    width: 15vw;
-    border-radius: 5px;
-    
-    background: linear-gradient(#e5f8e7,#ffffff);
-    box-shadow: 0px 0px 15px rgb(233, 233, 233);
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: relative;
-    left: 1%;
-    top: 50%;           /* Center vertically */
-    transform: translateY(-50%); /* Offset to center */
-    z-index: 7;
-    box-sizing: content-box;
-  }
+.sidebar-options{
+  background: none;
+          border: none; 
+          color: white;
+          cursor: pointer; 
+          padding:0; 
+          font-size: 1rem; 
+          text-align: left;
+          font-weight: bolder;
+          font-size: 17px;
+          width: 100%;
+}
+
+.main-container {
+  height: 80vh;
+  width: 15vw;
+  border-radius: 5px;
+  background-color: rgb(0, 5, 29);
+  box-shadow: 0px 0px 15px rgba(47, 105, 222, 0.3);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  z-index: 7;
+  box-sizing: content-box;
+}
 
 
 
 
 
-  
-  
-  
+
+
+

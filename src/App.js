@@ -16,25 +16,30 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
-        {/* Conditionally render the Sidebar */}
-        {isSidebarVisible && <Sidebar />}
-        
-        {/* MenuButton will access toggle and position from context */}
-        <div className={`main-content ${isSidebarVisible ? 'shifted' : ''}`}>
-        <MenuButton />
+      <div className="app-container">
+        <div className="sidebar-container">
+          {isSidebarVisible && <Sidebar />}
+          <MenuButton />
+        </div>
 
-        <Routes>
-          <Route path="/" element={<IndoorMap />} />
-          <Route path="/allmaps" element={<Allmaps />} />
-          <Route path="/bookmarks" element={<Bookmarks />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
+        <div className="main-content">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                  <IndoorMap />
+              }
+            />
+            <Route path="/allmaps" element={<Allmaps />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
         </div>
       </div>
     </BrowserRouter>
   );
 }
+
 
 export default App;
