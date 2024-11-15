@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/indoor-nav-app/static/css/main.8dae2a2d.css",
-    "main.js": "/indoor-nav-app/static/js/main.d17be779.js",
-    "static/media/Market.png": "/indoor-nav-app/static/media/Market.f2edffe7ce7140edbea1.png",
+    "main.css": "/indoor-nav-app/static/css/main.4bb79a49.css",
+    "main.js": "/indoor-nav-app/static/js/main.dc358e59.js",
+    "static/media/Market.png": "/indoor-nav-app/static/media/Market.af48a3b403ad300eb7e5.png",
     "index.html": "/indoor-nav-app/index.html",
-    "main.8dae2a2d.css.map": "/indoor-nav-app/static/css/main.8dae2a2d.css.map",
-    "main.d17be779.js.map": "/indoor-nav-app/static/js/main.d17be779.js.map"
+    "main.4bb79a49.css.map": "/indoor-nav-app/static/css/main.4bb79a49.css.map",
+    "main.dc358e59.js.map": "/indoor-nav-app/static/js/main.dc358e59.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dae2a2d.css",
-    "static/js/main.d17be779.js"
+    "static/css/main.4bb79a49.css",
+    "static/js/main.dc358e59.js"
   ]
 }
